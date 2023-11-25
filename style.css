@@ -1,0 +1,88 @@
+body{
+    margin: 0px;
+    display: inline;
+    overflow: hidden;
+
+}
+
+img{
+    height: 803px;
+    width: 1550px;
+}
+
+.square{
+    width: 200px;
+    height: 200px;
+    position:relative;
+    top: -400px;
+    animation: square 4s ease-in-out infinite;
+    z-index: 4;
+}
+@keyframes square{
+    0%{
+        left: 0px;
+    }
+    100%{
+        left: 1300px;
+    }
+}
+.kuzov{
+    background-color: rgb(255, 0, 0);
+    height: 70px;
+    width: 200px;
+    position: relative;
+    
+}
+.roof{
+    background-color: rgb(54, 51, 51);
+    height: 33px;
+    width: 81px;
+    position: relative;
+    left: 49px;
+    top: -201px;
+}
+.wheel{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    position: relative;
+    left: 130px;
+}
+.wheel1{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    position: relative;
+    top: -50px;
+    left: 10px;
+}
+.glass{
+    background: green;
+    position: relative;
+
+}
+.glass::after{
+    content: ''; 
+    position: absolute; /* Абсолютное позиционирование */
+    left: 130px; 
+    top: -200px; /* Положение треугольника */
+    border: 20px solid transparent; 
+    border-left: 50px solid rgb(0, 217, 255);
+    border-bottom: 10px solid rgb(0, 204, 255);
+}
+
+.glass2{
+    background: rgb(2, 216, 231);
+    position: relative;
+
+}
+.glass2::after{
+    content: ''; 
+    position: absolute; /* Абсолютное позиционирование */
+    top: -200px; /* Положение треугольника */
+    border: 20px solid transparent; 
+    border-right: 30px solid rgb(0, 225, 255);
+    border-bottom: 10px solid rgb(0, 217, 255);
+}
